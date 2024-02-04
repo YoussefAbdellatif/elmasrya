@@ -1,26 +1,69 @@
 import express  from "express";
+
+import fs from "fs";
+import {main,about,admin} from "./adminController.js";
+
+export const jsonFilePath = "./database.json";
 const  router = express.Router();
 
-router.get('/', () => {
-console.log('GE');
-    //  read products from file 
-    // send html to client with content
+router.get('/', (req, res) => {
+    
+    //  read data from file 
+    fs.readFile(jsonFilePath, 'utf8', (err, data) => {
+        if (err) {
+            console.error('Error reading the file:', err);
+            return;
+        }
+        const jsonData = JSON.parse(data);
+        console.log(jsonData)
+        
+        
+        main(req,res,jsonData);
+        
+        
+    }
+
+    );
 })
 
-router.get('/about-us', () => {
-    console.log('about');
+router.get('/about-us',  (req, res)=> {
+        fs.readFile(jsonFilePath, 'utf8', (err, data) => {
+            if (err) {
+                console.error('Error reading the file:', err);
+                return;
+            }
+            const jsonData = JSON.parse(data);
 
-    //  read about-us from file 
-    // send html to client with content
-});
 
 
-router.get('/admin', () => {
-console.log('admin');
- //  read products and about-us from file 
-// send html to client with content
- 
+            about(req, res, data);
 
-})
+
+        });
+
+    }
+
+
+);
+router.get('/admin',  (req, res)=> {
+    fs.readFile(jsonFilePath, 'utf8', (err, data) => {
+        if (err) {
+            console.error('Error reading the file:', err);
+            return;
+        }
+        const jsonData = JSON.parse(data);
+
+
+
+        admin(req, res, data);
+
+
+    });
+
+}
+
+
+);
+
 
 export default router;
