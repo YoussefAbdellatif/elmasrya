@@ -15,7 +15,6 @@ router.get('/', (req, res) => {
             return;
         }
         const jsonData = JSON.parse(data);
-        console.log(jsonData)
         
         
         main(req,res,jsonData);
@@ -45,25 +44,25 @@ router.get('/about-us',  (req, res)=> {
 
 
 );
-router.get('/admin',  (req, res)=> {
-    fs.readFile(jsonFilePath, 'utf8', (err, data) => {
-        if (err) {
-            console.error('Error reading the file:', err);
-            return;
-        }
-        const jsonData = JSON.parse(data);
+// router.get('/admin',  (req, res)=> {
+//     fs.readFile(jsonFilePath, 'utf8', (err, data) => {
+//         if (err) {
+//             console.error('Error reading the file:', err);
+//             return;
+//         }
+//         const jsonData = JSON.parse(data);
 
 
 
-        admin(req, res, data);
+//         admin(req, res, data);
 
 
-    });
+//     });
 
-}
+// }
 
 
-);
+// );
 
 
 export default router;

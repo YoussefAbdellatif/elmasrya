@@ -8,7 +8,7 @@ app.use(router)
 
 
 // app.use('/about-us',)
-app.listen(3000,()=>{console.log("listening on")})
+app.listen(3000,()=>{console.log("listening on 3000")})
 
 
 
