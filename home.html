@@ -90,21 +90,23 @@
         </div>
         <div id="product" class="products">
             <h3>Our Products</h3>
+           
             <div class="gallery-container">
-                <div class="gallery-item" data-title="gear" data-link="imageDisplay.html?id=1">
-                  <img src="./img/hand-holding-gear-cog-machine.jpg" alt="Image 1">
+                <div class="gallery-item" data-title="Street Sweeper" data-link="New Updated_Products/Sewer Cleaning_Ver2_تم تعديل الصورة_.pdf">
+                  
+                 <img src="./img/streetSweeper.png" alt="Image 1" >
                 </div>
-                <div class="gallery-item" data-title="Image 1" data-link="page1.html">
-                  <img src="./img/banner.jpg" alt="Image 2">
+                <div class="gallery-item" data-title="Combination Sewer Cleaners" data-link="New Updated_Products/Sewer Cleaning_Ver2_تم تعديل الصورة_.pdf">
+                  <img src="./img/CombinationSewerCleaners.png" alt="Image 2">
                 </div>
-                <div class="gallery-item" data-title="Image 1" data-link="page1.html">
-                    <img src="./img/aboutUs.jpg" alt="Image 2">
+                <div class="gallery-item" data-title="Water Meters" data-link="page1.html">
+                    <img src="./img/WaterMeters.png" alt="Image 2">
                   </div>
-                  <div class="gallery-item" data-title="Image 1" data-link="page1.html">
-                    <img src="./img/aboutUs.jpg" alt="Image 2">
+                  <div class="gallery-item" data-title="CCTV pipeline inspection" data-link="page1.html">
+                    <img src="./img/CCTVpipelineInspection.png" alt="Image 2">
                   </div>
-                  <div class="gallery-item" data-title="Image 1" data-link="page1.html">
-                    <img src="./img/hand-holding-gear-cog-machine.jpg" alt="Image 1">
+                  <div class="gallery-item" data-title="Truck Mounted Jetters" data-link="page1.html">
+                    <img src="./img/TruckMountedJetters.png" alt="Image 1">
                   </div>
                   <div class="gallery-item" data-title="Image 1" data-link="page1.html">
                     <img src="./img/about.jpg" alt="Image 2">
@@ -119,7 +121,13 @@
                     <img src="./img/person-using-ai-tool-job.jpg" alt="Image 1">
                   </div>
                   <div class="gallery-item" data-title="Image 1" data-link="page1.html">
+                    <img src="./img/hand-holding-gear-cog-machine.jpg" alt="Image 2">
+                  </div>
+                  <div class="gallery-item" data-title="Image 1" data-link="page1.html">
                     <img src="./img/banner.jpg" alt="Image 2">
+                  </div>
+                  <div class="gallery-item" data-title="Image 1" data-link="page1.html">
+                    <img src="./img/hand-holding-gear-cog-machine.jpg" alt="Image 2">
                   </div>
                 <!-- Add more gallery items as needed -->
               </div> 
@@ -147,7 +155,7 @@
                                         <p class="mb-0">46 saqr qurish ,Masaken sheraton ,Egypt – Cairo 11799</p>
                                     </div>
                                 </div>
-                                <div  class="col-lg-6">
+                                <div  class="col-lg-4">
                                     <div class="d-flex align-items-center">
                                         <i class="fa-solid fa-envelope"></i>
                                         <p class="mb-0">homran@massria.com</p>
@@ -157,6 +165,9 @@
                                         <p class="mb-0">info@massria.com</p>
                                     </div>
                                     
+                                </div>
+                                <div class="col-lg-2">
+                                  <img id="contactImg" src="./img/qrCode.png">
                                 </div>
                                 </div>
                             </div>
@@ -192,6 +203,12 @@
                 </section>
             </footer>
     </div>
+    <script>
+      function openDocxFile(element) {
+        var link = element.parentElement.getAttribute("data-link");
+        window.open(link, "_blank");
+      }
+    </script>
     <script src="script.js"></script>
     </body>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
