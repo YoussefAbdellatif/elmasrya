@@ -40,7 +40,7 @@
 }
 .aboutUs .vision{
   display: flex;
-  margin: 3rem 0;
+  margin: 1rem 0;
 }
 .aboutUs .vision i{
   color: #173e77;
@@ -128,7 +128,7 @@
   color: white;
 }
 .aboutPage{
-  background-color: #f8f9fa;
+  background-color: #fff;
 }
 .aboutPage .sec2 body{
   background-color:#173e77 ;
