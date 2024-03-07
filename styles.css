@@ -374,3 +374,32 @@ width:98px;
     width: 50%;
   }
 }*/
+/*******Contact cards***********/
+.contactCards{
+  text-align: center;
+  
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #e2e4ec;
+  background-color: aliceblue;
+}
+.contactCards p{
+  color: #677294;
+  margin-bottom: 0;
+  font-size: 1rem;
+}
+.contactCards  h5{
+  color: #173e77;
+  
+}
+.contactCards i{
+  font-size: 1rem;
+  padding: 0.4rem 1rem;
+}
+.contactCards .card{
+  padding: 1rem;
+  background-color: white;
+}
+/********************/
+.navbar-nav .dropdown:hover .dropdown-menu {
+  display: block;
+}

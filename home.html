@@ -42,12 +42,20 @@
                     <li class="nav-item">
                       <a class="nav-link" href="aboutUs.html">About Us</a>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="product.html">Products</a>
-                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="product.html" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            Products
+                          </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                      </li>
                     <li class="nav-item">
                       <a class="nav-link" href="home.html #contactUs">Contact Us</a>
                     </li>
+                    
                 </ul>
             </div>
         </div>
@@ -91,7 +99,7 @@
         
     </div>
     <div id="contactUs" class="contact">
-            <footer class="footer-area">
+            <footer class="footer-area" style="border-bottom: none;">
                 <section class="footer-top">
                     <div class="container">
                             <div class="contactUs">
@@ -131,6 +139,43 @@
                         </div>
                 </section>
             </footer>
+            <div class="contactCards">
+                <div class="container">
+                    <div class="row justify-content-around" style="text-align: center;">
+                        <div class="col-lg-3 card">
+                            <h5>Contact to apply for a job</h5>
+                            <p>Human Resources and Administration Department</p>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <i class="fa-solid fa-envelope"></i>
+                                <p class="mb-0">homran@massria.com</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 card">
+                            <h5>Ask for price or order</h5>
+                            <p>About products and services at Massria</p>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <i class="fa-solid fa-envelope"></i>
+                                <p class="mb-0">homran@massria.com</p>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <i class="fa-solid fa-phone"></i>
+                                <p class="mb-0 ml-1">+202 22692465</p>
+                            </div>
+                            
+                            <div class="d-flex align-items-center justify-content-center">
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                <p class="mb-0">+201022176763</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 card">
+                            <h5>Business hours</h5>
+                            <p>Every Sunday - Thursday</p>
+                            <p>from 8:00 am - 5:30 pm</p>
+                            
+                        </div>
+                    </div>
+            </div>
+            </div>
             <footer class="footer-area2">
                 <section class="footer-bottom"> 
                         <div class="row align-items-center">
@@ -160,6 +205,7 @@
                 </section>
             </footer>
     </div>
+    
     <script>
       function openDocxFile(element) {
         var link = element.parentElement.getAttribute("data-link");
@@ -169,4 +215,7 @@
     <script src="script.js"></script>
     </body>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </html>
