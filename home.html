@@ -16,11 +16,22 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="styles.css">
     <title>MMECO</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+   <!--  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  jQuery
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   --><!-- Bootstrap JS
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ -->
   </head>
 
   <body>
@@ -42,14 +53,29 @@
                     <li class="nav-item">
                       <a class="nav-link" href="aboutUs.html">About Us</a>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item active dropdown">
                         <a class="nav-link dropdown-toggle" href="product.html" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">
                             Products
                           </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <a class="dropdown-item" href="#">Action</a>
-                          <a class="dropdown-item" href="#">Another action</a>
-                          <a class="dropdown-item" href="#">Something else here</a>
+                          <a class="dropdown-item" href="home.html" target="_blank">Street Sweeper</a>
+                          <a class="dropdown-item" href="#">Combination Sewer Cleaners</a>
+                          <a class="dropdown-item" href="#">Water Meters</a>
+                          <a class="dropdown-item" href="#">CCTV pipeline inspection</a>
+                          <a class="dropdown-item" href="#">Truck Mounted Jetters</a>
+                          <a class="dropdown-item" href="#">Street Sweeper A7000</a>
+                          <a class="dropdown-item" href="#">Monitoring equipment</a>
+                          <a class="dropdown-item" href="#">Contractor Pump CP150i</a>
+                          <a class="dropdown-item" href="#">Contractor Pump CP250i</a>
+                          <a class="dropdown-item" href="#">Contractor Pump CP300i</a>
+                          <a class="dropdown-item" href="#">Cured-in-place pipe (CIPP)</a>
+                          <a class="dropdown-item" href="#">Inspection sealing & clean-up technology</a>
+                          <a class="dropdown-item" href="#">MultiPurpose Vacuum VC16</a>
+                          <a class="dropdown-item" href="#">Air sweeper A4000</a>
+                          <a class="dropdown-item" href="#">Sewer cleaners</a>
+                          <a class="dropdown-item" href="#">Sewer Jetting Systems</a>
+                          <a class="dropdown-item" href="#">Vacuum trucks</a>
+                          <a class="dropdown-item" href="#">MultiPurpose Vacuum VC 13</a>
                         </div>
                       </li>
                     <li class="nav-item">
@@ -60,12 +86,45 @@
             </div>
         </div>
     </nav>
-    <div id="home" class="header-container">
+    
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carouselText">
         <h1> MMECO</h1>
         <br>
         <h2>Massria Measuring &Control System</h2>
     </div>
-    <div class="container">
+    <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+            <img src="./img/interior-view-steel-factory.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+            <img src="./img/banner.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+            <img src="./img/aboutUs.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    
+    <div id="home" class="header-container " style="display: none;">
+        <h1> MMECO</h1>
+        <br>
+        <h2>Massria Measuring &Control System</h2>
+    </div>
+    <div class="container" style="display: none;">
         <div id="about" class="aboutUs">
             <div class="row">
                 <div class="col-lg-5">
@@ -213,9 +272,11 @@
       }
     </script>
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+ 
     </body>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+   <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+-->
 </html>

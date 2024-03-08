@@ -43,9 +43,31 @@
                     <li class="nav-item active">
                       <a class="nav-link active" href="aboutUs.html">About Us</a>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="product.html">Products</a>
-                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="product.html" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            Products
+                          </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="home.html" target="_blank">Street Sweeper</a>
+                          <a class="dropdown-item" href="#">Combination Sewer Cleaners</a>
+                          <a class="dropdown-item" href="#">Water Meters</a>
+                          <a class="dropdown-item" href="#">CCTV pipeline inspection</a>
+                          <a class="dropdown-item" href="#">Truck Mounted Jetters</a>
+                          <a class="dropdown-item" href="#">Street Sweeper A7000</a>
+                          <a class="dropdown-item" href="#">Monitoring equipment</a>
+                          <a class="dropdown-item" href="#">Contractor Pump CP150i</a>
+                          <a class="dropdown-item" href="#">Contractor Pump CP250i</a>
+                          <a class="dropdown-item" href="#">Contractor Pump CP300i</a>
+                          <a class="dropdown-item" href="#">Cured-in-place pipe (CIPP)</a>
+                          <a class="dropdown-item" href="#">Inspection sealing & clean-up technology</a>
+                          <a class="dropdown-item" href="#">MultiPurpose Vacuum VC16</a>
+                          <a class="dropdown-item" href="#">Air sweeper A4000</a>
+                          <a class="dropdown-item" href="#">Sewer cleaners</a>
+                          <a class="dropdown-item" href="#">Sewer Jetting Systems</a>
+                          <a class="dropdown-item" href="#">Vacuum trucks</a>
+                          <a class="dropdown-item" href="#">MultiPurpose Vacuum VC 13</a>
+                        </div>
+                      </li>
                     <li class="nav-item">
                       <a class="nav-link" href="home.html #contactUs">Contact Us</a>
                     </li>
@@ -156,7 +178,7 @@
     </div>
     </div>
     <div id="contactUs" class="contact">
-        <footer class="footer-area">
+        <footer class="footer-area" style="border-bottom: none;">
             <section class="footer-top">
                 <div class="container">
                         <div class="contactUs">
@@ -189,13 +211,50 @@
                                 
                             </div>
                             <div class="col-lg-2">
-                                <img  src="./img/qrCode.png" >
-                              </div>
+                              <img id="contactImg" src="./img/qrCode.png">
+                            </div>
                             </div>
                         </div>
                     </div>
             </section>
         </footer>
+        <div class="contactCards">
+            <div class="container">
+                <div class="row justify-content-around" style="text-align: center;">
+                    <div class="col-lg-3 card">
+                        <h5>Contact to apply for a job</h5>
+                        <p>Human Resources and Administration Department</p>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <i class="fa-solid fa-envelope"></i>
+                            <p class="mb-0">homran@massria.com</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 card">
+                        <h5>Ask for price or order</h5>
+                        <p>About products and services at Massria</p>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <i class="fa-solid fa-envelope"></i>
+                            <p class="mb-0">homran@massria.com</p>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <i class="fa-solid fa-phone"></i>
+                            <p class="mb-0 ml-1">+202 22692465</p>
+                        </div>
+                        
+                        <div class="d-flex align-items-center justify-content-center">
+                            <i class="fa-solid fa-mobile-screen"></i>
+                            <p class="mb-0">+201022176763</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 card">
+                        <h5>Business hours</h5>
+                        <p>Every Sunday - Thursday</p>
+                        <p>from 8:00 am - 5:30 pm</p>
+                        
+                    </div>
+                </div>
+        </div>
+        </div>
         <footer class="footer-area2">
             <section class="footer-bottom"> 
                     <div class="row align-items-center">
@@ -224,7 +283,7 @@
                     </div>
             </section>
         </footer>
-    </div>
+</div>
     <script src="script.js"></script>
   </body>
 </html>

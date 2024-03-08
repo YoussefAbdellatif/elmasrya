@@ -21,6 +21,18 @@
   border-bottom-left-radius: 52% 46%;
   border-bottom-right-radius: 52% 46%;
   margin-bottom: 20vh;
+  position: absolute;
+  z-index: 2;
+}
+.carousel img{
+  height: 100vh;
+}
+.carouselText{
+  color: white;
+  font-weight: bold;
+  padding: 50vh 30vh;
+  position: absolute;
+  z-index: 2;
 }
 .aboutUs .row {
   grid-gap: 10vh;
