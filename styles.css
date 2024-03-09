@@ -24,15 +24,30 @@
   position: absolute;
   z-index: 2;
 }
-.carousel img{
+/*.carousel img{
   height: 100vh;
+}*/
+.carousel-item img {
+  max-height: 500px;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  margin: auto;
+  min-height: 35vh;
+  object-fit: cover;
+}
+@media (max-width: 1180px){
+  .carousel-item img{
+    height: 35vh;
+  }
 }
 .carouselText{
   color: white;
   font-weight: bold;
-  padding: 50vh 30vh;
   position: absolute;
-  z-index: 2;
+  z-index: 1;
+  top: 50%;
+  left: 12%;
 }
 .aboutUs .row {
   grid-gap: 10vh;
@@ -411,7 +426,13 @@ width:98px;
   padding: 1rem;
   background-color: white;
 }
-/********************/
+/******************
 .navbar-nav .dropdown:hover .dropdown-menu {
   display: block;
+}
+.navbar-nav .dropdown:active a{
+  font-weight: bold;
+}**/
+.navbar-nav .dropdown-item {
+  font-size: 14px;
 }
