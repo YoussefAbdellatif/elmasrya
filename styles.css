@@ -92,6 +92,7 @@
   cursor: pointer;
   overflow: hidden;
   transition: border 300ms, color 300ms;
+  -webkit-user-select: none; 
   user-select: none;
   margin-bottom: 5vh;
   margin: auto;
