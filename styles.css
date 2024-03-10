@@ -2,6 +2,7 @@
   font-family: "Roboto";
 }
 
+
 .logo{
   margin-right: 1rem;
 }
@@ -305,6 +306,13 @@
 /*********************************/
 .contact{
   border-bottom: 1px solid #e0e3ef;
+}
+.contact .footer-top a{
+  text-decoration: none;
+  color: #212521;
+}
+.contact .footer-top a:hover{
+  color: #3866aa;
 }
 .contact i{
   color: #173e77;
