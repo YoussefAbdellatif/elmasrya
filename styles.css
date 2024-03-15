@@ -98,6 +98,9 @@
   margin-bottom: 5vh;
   margin: auto;
 }
+a {
+  text-decoration: none;
+}
 
 .button a {
   z-index: 1;
