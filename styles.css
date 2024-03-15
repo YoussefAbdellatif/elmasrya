@@ -25,23 +25,23 @@
   position: absolute;
   z-index: 2;
 }
-/*.carousel img{
-  height: 100vh;
-}*/
+.carousel {
+  margin-top: 72px;
+}
 .carousel-item img {
   max-height: 600px;
   width: auto;
   height: auto;
   max-width: 100%;
   margin: auto;
-  min-height: 35vh;
+ /* min-height: 35vh;*/
   object-fit: cover;
 }
-@media (max-width: 1180px){
+/*@media (max-width: 1180px){
   .carousel-item img{
-    height: 35vh;
+    height: auto;
   }
-}
+}*/
 .carouselText{
   color: white;
   font-weight: bold;
@@ -310,12 +310,15 @@ a {
 .contact{
   border-bottom: 1px solid #e0e3ef;
 }
-.contact .footer-top a{
+.contact .footer-top a , .contactCards a{
   text-decoration: none;
   color: #212521;
 }
-.contact .footer-top a:hover{
+.contact .footer-top a:hover , .contactCards a:hover{
   color: #3866aa;
+}
+.contact .footer-top p{
+  font-size: 1rem;
 }
 .contact i{
   color: #173e77;
