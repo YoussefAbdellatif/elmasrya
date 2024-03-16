@@ -41,3 +41,65 @@ document.addEventListener('DOMContentLoaded', function () {
       displayName.textContent = `Image ${imageId}`;
     }
   });
+
+
+
+
+  /*********************************************************************** 
+  document.addEventListener("DOMContentLoaded", function () {
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    galleryItems.forEach(item => {
+        item.addEventListener('click', function (event) {
+            event.preventDefault(); // Prevent default behavior
+            const pdfLink = this.getAttribute('data-link');
+            if (pdfLink && pdfLink.endsWith('.pdf')) {
+                window.open(pdfLink, '_blank');
+            }
+        });
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const galleryItems = document.querySelectorAll('.gallery-item');
+  galleryItems.forEach(item => {
+      item.addEventListener('click', function (event) {
+          event.preventDefault(); // Prevent default behavior
+          const pdfLink = this.getAttribute('data-link');
+          if (pdfLink && pdfLink.endsWith('.pdf')) {
+              const embedHTML = `<embed src="${pdfLink}" type="application/pdf" width="100%" height="100%">`;
+              const newTab = window.open();
+              newTab.document.body.innerHTML = embedHTML;
+          }
+      });
+  });
+});
+document.addEventListener("DOMContentLoaded", function () {
+  const galleryItems = document.querySelectorAll('.gallery-item');
+  galleryItems.forEach(item => {
+      item.addEventListener('click', function (event) {
+          event.preventDefault(); // Prevent default behavior
+          const pdfLink = this.getAttribute('data-link');
+          if (pdfLink && pdfLink.endsWith('.pdf')) {
+              const iframeHTML = `<iframe src="${pdfLink}" width="100%" height="100%"></iframe>`;
+              const newTab = window.open();
+              newTab.document.body.innerHTML = iframeHTML;
+          }
+      });
+  });
+});
+document.addEventListener("DOMContentLoaded", function () {
+  const galleryItems = document.querySelectorAll('.gallery-item');
+  galleryItems.forEach(item => {
+      item.addEventListener('click', function (event) {
+          event.preventDefault(); // Prevent default behavior
+          const pdfLink = this.getAttribute('data-link');
+          if (pdfLink && pdfLink.endsWith('.pdf')) {
+              const anchor = document.createElement('a');
+              anchor.href = pdfLink;
+              anchor.target = '_blank';
+              anchor.download = pdfLink.split('/').pop(); // Set download attribute to file name
+              anchor.click();
+          }
+      });
+  });
+});*/

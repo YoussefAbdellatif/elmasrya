@@ -451,3 +451,19 @@ width:98px;
 .navbar-nav .dropdown-item {
   font-size: 14px;
 }
+/******************************/
+/**** street sweeper******/
+.streetSweeper {
+  text-align: center;
+}
+.streetSweeper h1{
+  text-align: center;
+  margin-top: 8rem;
+  margin-bottom: 2rem;
+  color: #007bb8;
+  font-family: serif;
+  font-weight: 600;
+}
+.streetSweeper h5{
+  font-weight: bold;
+}
